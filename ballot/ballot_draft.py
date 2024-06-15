@@ -246,7 +246,7 @@ def G2_part2(eps_v_w_ls, gamma_w_ls, evr_kw_ls, eps_r_w_ls, c, width, height, ca
         candidate_x = candidate_x_center - candidate_width / 2
         
     _sk = group.random(ZR)
-    qr_data = sha256_of_array(c_w_all)
+    qr_data = c_w_all
     print(qr_data)
     qr_filename2 = "qr_code2.png"
     generate_qr_code(qr_data, qr_filename2)
